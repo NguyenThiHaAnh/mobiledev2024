@@ -10,6 +10,29 @@
     android:orientation="vertical"
     android:background="#bfd5ff"
     tools:context=".ForecastFragment">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#d4ffea">
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="24C\nRainy"
+            android:textSize="20dp"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="320dp"
+            android:text="Hanoi"
+            android:textSize="20dp"
+            android:gravity="right"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/Rainy"
+            android:gravity="center"
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
