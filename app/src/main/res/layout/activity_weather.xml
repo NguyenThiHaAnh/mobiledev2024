@@ -1,41 +1,23 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+    android:orientation="vertical"
+    tools:context=".WeatherActivity">
 
-    <TextView
-        android:id="@+id/textViewTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/weather_activity"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:contentDescription="@string/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.google.android.material.tabs.TabLayout>
 
-    <Button
-        android:id="@+id/buttonUpdate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/update_weather"
-        android:layout_below="@id/textViewTitle"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:contentDescription="@string/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.viewpager.widget.ViewPager>
 
-    <TextView
-        android:id="@+id/textViewWeatherInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/weather_info_will_be_displayed_here"
-        android:layout_below="@id/buttonUpdate"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"/>
-
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="389dp"
-        android:layout_height="77dp"
-        android:layout_below="@id/textViewWeatherInfo"
-        android:layout_marginTop="20dp" />
-
-</RelativeLayout>
+</LinearLayout>

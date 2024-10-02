@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.theme.WeatherFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    android:layout_height="300dp"
+    android:background="#d4ffea">
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24C\nRainy"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="350dp"
+        android:text="Hanoi"
+        android:textSize="20dp"
+        android:gravity="right"/>
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/rainy"
+        android:gravity="center">
 
-</FrameLayout>
+    </ImageView>
+</RelativeLayout>
